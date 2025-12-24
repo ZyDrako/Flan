@@ -37,6 +37,11 @@ repositories {
     }
 }
 
+loom {
+    enableModProvidedJavadoc.set(false)
+    enableTransitiveAccessWideners.set(false)
+}
+
 dependencies {
     modImplementation include("io.github.flemmli97:lingua_bib:${lingua_bib}-fabric")
     implementation include('org.yaml:snakeyaml:2.4')
